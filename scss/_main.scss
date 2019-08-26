@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(211, 207, 207);
+}
+main{ 
+    width: 90%;
+    margin: 0 auto;
+    padding: 8rem 0;
+    padding-bottom: 2rem;
+    @media screen and (min-width: $desktop) {
+        padding: 4rem 0;
+        padding-bottom: 2rem;
+    }
+}
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:  2rem;
+}
+
+.welcome-title{
+    text-align: center;
+    color: $darksteelblue;
+    margin-bottom:  1rem;
+
+}
+
+.email, .submitBTN{
+    width: 40%;
+    margin: .4rem 0;
+    @media screen and (min-width: $tablet) {
+        width: 30%;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 20%;
+    }
+}
+
+.input-group{
+    width: 50%;
+    margin: .4rem 0;
+    @media screen and (min-width: $tablet) {
+        width: 40%;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 30%;
+    }
+}
+
+
+
+.features{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featuresItem{
+    display: flex;
+    padding: .5rem 0;
+    flex-direction: column;
+    align-items: center;
+    & i {
+        padding: .5rem 0;
+        @media screen and (min-width: $tablet){
+            padding: .5rem 1rem;
+        }
+    }
+    @media screen and (min-width: $tablet){
+        flex-direction: row;
+    }
+}
+
+
+.flexTitleFeature{
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
+}
+
+.youtube{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem .1rem;
+}
+
+i {
+    font-size: 2rem;
+    color: $lightsteelblue;
+}
+
+h4{
+    font-size: 1.5rem;
+    color: $darkerblue;
+    text-decoration: underline;
+}
+
+.about{
+    padding-bottom: .8rem;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: $darkerblue;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover {
+        background-color: lighten($darkerblue, 25%);
+        text-decoration: none;
+      }
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.pricing{
+   text-align: center;
+   
+   @media screen and (min-width: $tablet) {
+       display: flex;
+
+   }
+}
+
+.tier{
+//    padding: 1rem;
+   margin: 1rem 6rem;
+   border: 2px solid $darkerblue;
+   border-radius: 1rem;
+    @media screen and (min-width: $tablet) {
+        flex-grow: 1;
+        margin: 1rem;
+
+    }
+}
+
+.pricing-flex{
+    width: 100%;
+}
+
+.pricing-button{
+    margin-bottom: .6rem;
+}
+
+h2{
+    color: $lightsteelblue;
+    text-decoration: underline;
+}
+.price{
+    color: $darkerblue;
+}
+
+.card-title{
+    background-color: $darkerblue;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    padding: .5rem 0;
+}
+
+.footer{
+    background-color: grey;   
+    font-weight: bold;
+    color: $darksteelblue;
+    & h5 {
+        text-align: right;
+        margin-top: 1rem;
+        margin-right: 3rem;
+        padding-bottom: .7rem;
+        margin-bottom: 0;
+        color: $darkerblue;
+    } 
+}
+.footernav{
+    font-size:  .8rem;
+    padding-top: .6rem;
+    display: flex;
+    justify-content: flex-end;
+
+    list-style: none;
+   margin-right: 3rem;
+    & li {
+        text-decoration: underline;
+        padding: 0 .3rem;
+        text-align: center;
+    }
+}
+
+
+p{
+    margin-bottom: 0;
+    color: $darkerblue;
+}
+
+
+//ensures target content does not go under the header when clicked and linked to area to jump too
+.jumptarget::before {
+    content:"";
+    display:block;
+    height:50px; /* fixed header height*/
+    margin:-50px 0 0; /* negative fixed header height */
+  }

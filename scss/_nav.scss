@@ -1,0 +1,67 @@
+$tablet: 700px;
+$desktop: 900px;
+
+$darksteelblue: #335E82;
+$darkblue: #252E36;
+$steelblue: #4783B5;
+$lightsteelblue: #85A6C1;
+$darkerblue: #152736;
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(211, 207, 207);
+    @media screen and (min-width: $tablet){
+        padding: 0 2rem;
+        flex-direction: row;
+        align-items: center;
+    }
+} 
+
+.title{
+    font-size: 1.5rem;
+    flex-grow: 1;
+    list-style:  none;
+    font-weight: bold;
+    color: $darkblue;
+    & i{
+        color: $darksteelblue;
+    }
+  @media screen and (min-width: $desktop) {
+      text-align: left;
+  }
+
+}
+
+.mainNav{
+    flex-grow: 1;
+    margin: 0 4rem;
+    list-style:  none;
+    & .item{
+        margin: .3rem 0;
+        @media screen and (min-width: $tablet){
+            margin: .8rem 0;
+        }
+    }
+    @media screen and (min-width: $desktop){
+        display: flex;  
+        justify-content: space-around;
+    }
+}
+
+a{
+    color: $darkblue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: inherit
+    }
+}

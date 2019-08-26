@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <ul class="nav">
+                <li class="item title"><i class="fas fa-guitar"></i>Original Guitars</li>
+                <li class="mainNav">
+                    <div class="item"><a href="#features">Features</a></div>
+                    <div class="item"><a href="#howitworks">How it Works</a></div>
+                    <div class="item"><a href="#pricing">Pricing</a></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main >
+        <div>
+            <div class="welcome">
+                <h1 class="welcome-title">Hand-crafted, custom made guitars for professionals</h1>
+                <!-- <input class="email" type="text" name="email" type="email" placeholder="Enter Your Email" requied>
+                <input class="submitBTN btn" type="submit" placeholder="Email" value="Get Started!"> -->
+                <div class="input-group">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Sign up!</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" >
+                </div>
+            </div>
+            <div class="features jumptarget" id="features"> 
+                <div class="featuresItem" >
+                    <i class="fas fa-music"></i>
+                    <div class="flexTitleFeature"> 
+                        <h4>Premium Wood and Build</h4>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="featuresItem"> 
+                    <i class="fas fa-cut"></i>
+                    <div class="flexTitleFeature"> 
+                        <h4>Custom Orders</h4>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="featuresItem">
+                    <i class="fas fa-battery-full"></i>
+                    <div class="flexTitleFeature"> 
+                        <h4>Quality Assurence</h4>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="youtube-flex jumptarget" id="howitworks"> 
+            <div class="youtube"> 
+                <div class="iframe-container"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sAeXskZHC2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-flex jumptarget" id="pricing">
+            <div class="pricing">
+                <div class="tier">
+                    <div class="pricing-title"> 
+                        <h2 class="card-title"> Basic Tier</h2>
+                    </div>
+                    <div > 
+                        <h2 class="price" > 700$ </h2>
+                    </div>
+                    <div class="about">
+                        <p> Lorem ipsum dolor</p>
+                        <p> Lorem ipsum</p>
+                        <p> Lorem ipsum</p>
+                        <p> Lorem ipsum</p>
+                    </div>
+                    <div class="pricing-button">
+                        <button class="btn">Buy Now</button>  
+                    </div>
+                </div>
+                <div class="tier">
+                    <div class="pricing-title"> 
+                        <h2 class="card-title"> Expert Tier</h2>
+                    </div>
+                    <div > 
+                        <h2 class="price"> 1000$ </h2>
+                    </div>
+                    <div class="about">
+                        <p> Lorem ipsum </p>
+                        <p> Lorem ipsum dolor</p>
+                        <p> Lorem ipsum</p>
+                        <p> Lorem ipsum</p>
+                    </div>
+                    <div class="pricing-button">
+                        <button class="btn">Buy Now</button>  
+                    </div>
+                </div>
+                <div class="tier">
+                <div class="pricing-title"> 
+                        <h2 class="card-title" > Pro Tier</h2>
+                    </div>
+                    <div > 
+                        <h2 class="price"> +1600$ </h2>
+                    </div>
+                    <div class="about">
+                        <p> Lorem ipsum</p>
+                        <p> Lorem ipsum </p>
+                        <p> Lorem ipsum dolor</p>
+                        <p> Lorem ipsum</p>
+                    </div>
+                    <div class="pricing-button">
+                        <button class="btn">Buy Now</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerflex">
+           <ul class="footernav">
+               <li class="footeritem">  <a href="#"> Terms &amp; Conditions </a>  </li>
+               <li class="footeritem">  <a href="#"> Privacy  </a> </li>
+               <li class="footeritem">  <a href="#"> Contact  </a> </li>
+           </ul>
+           <div class="footerName">
+               <h5>Copyright 2019, Custom Guitars Inc.</h5>
+           </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
