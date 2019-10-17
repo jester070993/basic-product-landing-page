@@ -1,5 +1,16 @@
+$tablet: 700px;
+$desktop: 900px;
+
+$darksteelblue: #335E82;
+$darkblue: #252E36;
+$steelblue: #4783B5;
+$lightsteelblue: #85A6C1;
+$darkerblue: #152736;
+
 body{
     background-color: rgb(211, 207, 207);
+    font-family: 'Oxygen', sans-serif;
+
 }
 main{ 
     width: 90%;
@@ -23,7 +34,9 @@ main{
 .welcome-title{
     text-align: center;
     color: $darksteelblue;
-    margin-bottom:  1rem;
+    margin:  1rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
 
 }
 
@@ -183,6 +196,8 @@ h2{
     border-top-left-radius: .8rem;
     border-top-right-radius: .8rem;
     padding: .5rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .footer{

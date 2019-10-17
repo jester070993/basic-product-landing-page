@@ -16,11 +16,13 @@ $darkerblue: #152736;
     text-align: center;
     position: fixed;
     z-index: 100;
-    background-color: rgb(211, 207, 207);
+    background-color: rgb(165, 164, 164);
     @media screen and (min-width: $tablet){
         padding: 0 2rem;
         flex-direction: row;
         align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+
     }
 } 
 
